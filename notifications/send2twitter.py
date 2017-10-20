@@ -36,4 +36,4 @@ if getenv('NOTIFY_SERVICEDESC') is None:
 else:
     body_t = notification_service_pager_body
 
-conn.direct_messages.new(user=environ['CONTACTPAGER'], text=body_t)
+conn.direct_messages.new(user=environ['NOTIFY_CONTACTPAGER'], text=body_t)
